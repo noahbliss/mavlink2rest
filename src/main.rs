@@ -57,7 +57,7 @@ fn main() -> std::io::Result<()> {
             return format!("{:?}", result);
         };
 
-        return "Could not convert input message.".into();
+        return format!("Could not convert input message: {value:#?}");
     }));
 
     loop {
